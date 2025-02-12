@@ -1,0 +1,32 @@
+ /* Setting box-sizing globally is a common practice */
+ *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  .box {
+    width: 200px; /* content + padding + border if border-box */
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #333;
+    background-color: #fafafa;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+   /* So boxes align side-by-side */
+  }
+
+  .box h2 {
+    margin-top: 0; /* remove default margin to observe box spacing */
+  }
+
+
+  .box2 {
+    width: 200px; /* content + padding + border if border-box */
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid #333;
+    background-color: #fafafa;
+    display: inline-block;
+    vertical-align: top; /* So boxes align side-by-side */
+    box-sizing: content-box;
+  }

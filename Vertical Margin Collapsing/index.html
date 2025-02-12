@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Vertical Margin Collapsing</title>
+    
+  </head>
+  <body>
+    <div class="box">
+      <h2>Box 1</h2>
+      <p>This box has a 2px border, 20px padding, and 10px margin.</p>
+    </div>
+    <p> 
+      This paragraph is outside of the box, but still has a 10px margin. 
+      This is because the margin of the box and the margin of the paragraph are collapsing.
+    </p>
+    <div class="box">
+      <h2>Box 2</h2>
+      <p>Same settings, placed side-by-side with an inline-block display.</p>
+    </div>
+
+    <footer>
+      <p>
+        When two block-level elements (like a box and a paragraph) are adjacent to each other, their vertical margins can collapse into a single margin. This means that instead of the margins adding up, the larger of the two margins will be used. When Boxes merge Horizontally, their margins will not collapse, they will be added together.
+      </p>
+    </footer>
+  </body>
+</html>
