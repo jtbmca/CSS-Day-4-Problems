@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width:200x;
+    height:200x;
+    border:10px solid #333;
+    padding:5px;
+    margin: 10px;
+}
+
+.gallery {
+    display:inline-flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width:100px;
+        height:100px;
+        margin:5px
+    }
+}
